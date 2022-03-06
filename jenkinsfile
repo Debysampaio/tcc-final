@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Clonar o repositório') {
+        stage('Clona o repositório') {
             steps {
                 git branch: 'main', url: 'https://github.com/Debysampaio/tcc-final.git'
             }
