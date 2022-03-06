@@ -66,8 +66,8 @@ Cypress.Commands.add('limparCarrinho', () => {
     cy.get('[data-product_id="2559"]').eq(1).click()
     cy.get('.breadcrumb').click()
     cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
-    cy.get('[data-product_id="3111"]').eq(1).click()
+    cy.get('[data-product_id="3374"]').eq(1).click()
     cy.get('.breadcrumb').click()
     cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
-    cy.get('[data-product_id="3374"]').eq(1).click()
+    cy.get('[data-product_id="3073"]').eq(1).click()
 });

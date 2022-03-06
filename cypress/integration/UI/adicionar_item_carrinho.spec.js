@@ -15,12 +15,12 @@ context('Adicionar itens ao carrinho', () => {
 
     it('Deve adicionar itens ao carrinho', () => {
         var produto1 = 'Abominable Hoodie'
-        var produto2 = 'Aero Daily Fitness Tee'
-        var produto3 = 'Apollo Running Short'
+        var produto2 = 'Apollo Running Short'
+        var produto3 = 'Aether Gym Pant'
         //Adiconar itens ao carrinho
         cy.produtos(produto1,'L', 'Green')
-        cy.produtos(produto2,'M', 'Yellow')
-        cy.produtos(produto3,'36', 'Black')
+        cy.produtos(produto2,'36', 'Black')
+        cy.produtos(produto3,'34', 'Brown')
 
         // Validando a quantidade de itens no carrinho
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', 3)
