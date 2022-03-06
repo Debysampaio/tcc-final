@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clona o repositório') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Debysampaio/tcc-final.git'
+            }
+        }
+            stage('instalar dependencias') {
+            steps {
+                powershell 'npm ci'
+            }
+        }
+                stage('executar os testes') {
+            steps {
+                powershell 'npm run cy:run'
+            }
+        }
+    }
+}
